@@ -1,0 +1,10 @@
+REQUEST_METHOD:GET,PARAMETER:*,CONTAINS:"'"	/*Detect SQL Injection*/
+REQUEST_METHOD:GET,PARAMETER:*,CONTAINS:"select" /*Detect SQL Injection*/
+REQUEST_METHOD:GET,PARAMETER:*,CONTAINS:"union all" /*Detect SQL Injection*/
+REQUEST_METHOD:GET,PARAMETER:*,CONTAINS:"<" /*Detect XSS Attack*/
+REQUEST_METHOD:GET,PARAMETER:*,CONTAINS:">" /*Detect XSS Attack*/
+REQUEST_METHOD:GET,PARAMETER:*,CONTAINS:"javascript" /*Detect XSS Attack*/
+REQUEST_METHOD:POST,PARAMETER:*,CONTAINS:"../" /*Search the parameter "foo" of POST Requests for possible 
+Directory Traversal vulnerabilities*/
+HEADER:User-Agent,CONTAINS:"<script>"	/*Detect basic XSS ATTACK through User-Agent Header*/
+HEADER:User-Agent,CONTAINS:"bot"	/*Deny all requests from hosts that identify themselves as bots*/
