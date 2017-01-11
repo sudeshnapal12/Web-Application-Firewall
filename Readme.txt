@@ -1,13 +1,5 @@
 				
 				Web Application Firewall
-
-Contributors
----------------------------------------------------------------
-Amogh Avadhani
-Ankit Agrahari
-Prachi Poddar
-Sudeshna Pal
-
 Introduction
 ---------------------------------------------------------------
 
@@ -60,6 +52,13 @@ used by the WAF to check for attacks.
 For anomaly detection, the collected information about legitimate traffic
 stored in file system. The data stored in files is encrypted so as to 
 avoid misuse of the data from the adversaries.
+
+Contributors
+---------------------------------------------------------------
+Amogh Avadhani
+Ankit Agrahari
+Prachi Poddar
+Sudeshna Pal
 
 
 -------------------Copyright 2016, All rights reserved----------------------------
